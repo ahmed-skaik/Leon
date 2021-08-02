@@ -234,7 +234,7 @@ html {
   position: relative;
 }
 
-.intor-text h1::selection , .contact-info h5 a::selection {
+.intor-text h1 span::selection , .contact-info h5 a::selection {
   background-color: var(--secondary-color);
   color: var(--id-color);
 }
@@ -620,6 +620,15 @@ footer .container div {
 footer .container div span {
   color: var(--id-color);
   font-weight: bold;
+}
+
+footer .container div::selection {
+  background-color: #333;
+}
+
+footer .container div span::selection {
+  background-color: #333;
+  color: var(--id-color);
 }
 
 @media (max-width: 767px) {
