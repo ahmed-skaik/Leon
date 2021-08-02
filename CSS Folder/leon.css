@@ -20,7 +20,7 @@
   .butt i {
     font-size: 50px;
     color: #333;
-    transition: 0.2s;
+    transition: 0.75s;
   }
 
   @media (max-width: 767px) {
@@ -31,6 +31,7 @@
 
   .butt:hover i {
     color: var(--id-color);
+    transform: rotate(1turn);
   }
 /* scroll up button start */
 
@@ -255,12 +256,18 @@ html {
   color: var(--id-color);
 }
 
+.landing .intor-text h1 span {
+  transition: 0.5s;
+}
+
+.landing .intor-text h1 span:first-child:hover {
+  color:  #333;
+}
+
 .landing .intor-text p {
   font-size: 19px;
   line-height: 1.8;
 }
-
-
 
 /* end landing */
 
@@ -582,6 +589,16 @@ html {
     .contact-info .social {
       font-size: 12px;
       }
+
+      .contact-info .social .icons {
+        display: block;
+        margin-top: 15px;
+      }
+
+      .contact-info .social .icons i {
+        font-size: 20px;
+        padding: 8px;
+      }
     }
 /* contact end */
 
@@ -603,5 +620,11 @@ footer .container div {
 footer .container div span {
   color: var(--id-color);
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  footer .container div {
+    font-size: 14px;
+  }
 }
 /* footer end */
