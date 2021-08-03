@@ -129,6 +129,10 @@ html {
 /* start header */
   header {
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(255 255 255 / 75%);
   }
 
   .container .links:hover .icon span:nth-child(2) {
@@ -278,6 +282,7 @@ html {
   background-color: #f6f6f6;
 }
 
+
 .features .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -287,6 +292,12 @@ html {
 .features .feat {
   padding: 20px;
   text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.features .feat:hover {
+  box-shadow: 0 0 3px 2px rgb(0 0 0 / 15%);
 }
 
 .features .feat i {
@@ -581,7 +592,27 @@ html {
       color: var(--id-color);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 350px) {
+      .contact-info h5 a, .contact-info h4 {
+        font-size: 20px;
+      }
+
+      .contact-info .social {
+        font-size: 12px;
+        }
+  
+        .contact-info .social .icons {
+          display: block;
+          margin-top: 15px;
+        }
+  
+        .contact-info .social .icons i {
+          font-size: 20px;
+          padding: 8px;
+        }
+    }
+
+    @media (min-width: 351px) and (max-width: 767px) {
     .contact-info h4 , .contact-info h5 a {
       font-size: 22px;
     }
